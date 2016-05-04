@@ -1,0 +1,9 @@
+{
+  "shoppingcartdb" : {
+    "HOST" : "localhost",
+    "DBTYPE" : "postgres",
+    "DBNAME" : "shoppingdb",
+    "USER" : "your_username",
+    "PASSWORD" : "your_password"
+  }
+}

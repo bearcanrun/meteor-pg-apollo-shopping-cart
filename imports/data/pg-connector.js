@@ -1,11 +1,16 @@
 import Sequelize from 'sequelize';
 import casual from 'casual';
 import Random from 'meteor/meteor';
-import { username, password, database }  from '/imports/data/config';
 
-export const db = new Sequelize('shoppingdb', username, password, {
-  host: 'localhost',
-  dialect: database
+const host = meteor.settings.shoppingcartdb.HOST;
+const dbType = meteor.settings.shoppingcartdb.DBTYPE;
+const dbName = meteor.settings.shoppingcartdb.DBNAME;
+const username = meteor.settings.shoppingcartdb.USERNAME;
+const password = meteor.settings.shoppingcartdb.PASSWORD;
+
+export const db = new Sequelize(dbName, username, password, {
+  host: host,
+  dialect: dbType
 });
 
 const ProductModel = db.define('products', {
