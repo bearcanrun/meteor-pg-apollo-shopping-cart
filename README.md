@@ -7,23 +7,22 @@
 2. Install and run.
 
 3. In the pg console, create and connect to the database
-
-4. Modify the username in the [pg-connector](https://github.com/abhiaiyer91/meteor-pg-apollo-shopping-cart/blob/master/imports/data/pg-connector.js#L5)
-
 ```
 CREATE DATABASE shoppingdb;
-\c shopping
+\c shoppingdb
 
 ```
+4. Copy settings.sample.json to settings.json.
+
+5. Update settings.json for shoppingdb host,
+dbtype, dbname, username and password
 
 
-
-## Start Meteor
-
+## Install npm packages & start meteor
 ```js
 npm install
 
-meteor
+npm start
 ```
 
 
