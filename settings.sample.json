@@ -3,7 +3,7 @@
     "HOST" : "localhost",
     "DBTYPE" : "postgres",
     "DBNAME" : "shoppingdb",
-    "USER" : "your_username",
+    "USERNAME" : "your_username",
     "PASSWORD" : "your_password"
   }
 }

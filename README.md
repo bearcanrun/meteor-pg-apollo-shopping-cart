@@ -10,13 +10,14 @@
 ```
 CREATE DATABASE shoppingdb;
 \c shoppingdb
-
 ```
-4. Copy settings.sample.json to settings.json.
+## Setup Database config
+1. Copy settings.sample.json to settings.json.
 
-5. Update settings.json for shoppingdb host,
-dbtype, dbname, username and password
+2. Update settings.json for shoppingdb host,
+dbtype, dbname, username and password.
 
+*dbtype value can be 'mysql','mariadb','sqlite','postgres' or 'mssql'.
 
 ## Install npm packages & start meteor
 ```js
